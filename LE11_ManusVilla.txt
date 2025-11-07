@@ -3,8 +3,8 @@
 
 int main() {
     FILE *fp;
-    char name[100];
-    char section[50];
+    char name[69];
+    char section[69];
   
     fp = fopen("students.txt", "w");
     if (fp == NULL) {
@@ -30,7 +30,7 @@ int main() {
         return 1;
     }
 
-    char text[200];
+    char text[69];
     while (fgets(text, sizeof(text), fp) != NULL) {
         printf("%s", text);
     }
